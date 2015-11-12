@@ -1,0 +1,13 @@
+[user]
+    name = Evgeny Stankevich
+    email = stankevich.evg@gmail.com
+[push]
+    default = current
+[alias]
+    lg = log --oneline --decorate --all --graph
+    last = log -1 HEAD
+    st = status -s
+    ci = commit -m
+    cia = commit --amend -m
+    co = checkout
+    pof = push origin -f
