@@ -11,3 +11,6 @@
     cia = commit --amend -m
     co = checkout
     pof = push origin -f
+[core]
+	safecrlf = true
+	autocrlf = input
