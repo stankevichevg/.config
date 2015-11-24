@@ -18,7 +18,7 @@ function start_docker_host
 
 status=$(docker-machine status $machine)
 
-if [ "$status" != "Started" ]; then
+if [ "$status" != "Started" ] && [ "$status" != "Running" ]; then
   echo "Status of the machine $machine is stopped. Trying to start is first."
   start_docker_host
   setup_environment
